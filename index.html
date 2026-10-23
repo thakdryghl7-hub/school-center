@@ -671,6 +671,57 @@ footer .office b{font-weight:700}
 .why-cta .wbtn.ghostb{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--rule-2)}
 .why-cta .wbtn.ghostb:hover{background:var(--mist);color:var(--ink)}
 
+/* ── 차별점 실사진 증빙 ── */
+.why-proof{display:grid;gap:1.2rem;margin-top:clamp(2rem,4.5vw,2.8rem)}
+@media (min-width:760px){.why-proof{grid-template-columns:repeat(3,1fr);gap:1.4rem}}
+.why-proof figure{margin:0;background:var(--card);border-radius:16px;box-shadow:var(--card-shadow);overflow:hidden}
+.why-proof .ph{position:relative;height:300px;background:#F4F7FA;overflow:hidden}
+.why-proof .ph img{position:absolute;inset:0;margin:auto;max-width:calc(100% - 1.6rem);max-height:calc(100% - 1.6rem);display:block}
+.why-proof figcaption{font-size:.84rem;color:var(--card-ink-2);padding:.75rem 1rem .95rem;line-height:1.55;word-break:keep-all;text-align:center}
+.why-proof figcaption b{color:var(--card-ink);font-weight:700}
+
+/* ── 실제 소통 메일 증빙 ── */
+.why-comm{margin-top:clamp(2.4rem,5.5vw,3.4rem)}
+.why-comm .wc-head{font-family:var(--display);font-weight:800;font-size:clamp(1.25rem,2.6vw,1.6rem);letter-spacing:-.03em;color:var(--ink);word-break:keep-all}
+.why-comm .wc-sub{color:var(--ink-2);font-size:.93rem;line-height:1.7;margin-top:.55rem;max-width:44rem;word-break:keep-all}
+.why-comm .wc-grid{display:grid;gap:1.2rem;margin-top:1.5rem}
+@media (min-width:860px){.why-comm .wc-grid{grid-template-columns:repeat(3,1fr);gap:1.4rem}}
+.why-comm figure{margin:0;background:var(--card);border-radius:16px;box-shadow:var(--card-shadow);overflow:hidden}
+.why-comm .cph{display:block;position:relative;background:#FFF;border-bottom:1px solid var(--rule-2)}
+.why-comm .cph img{width:100%;display:block}
+.why-comm .lvl{position:absolute;top:.7rem;right:.7rem;background:var(--band);color:#FFF;font-family:var(--display);font-weight:800;font-size:.76rem;letter-spacing:.02em;padding:.32rem .75rem;border-radius:999px}
+.why-comm figcaption{font-size:.84rem;color:var(--card-ink-2);padding:.75rem 1rem .95rem;line-height:1.55;word-break:keep-all;text-align:center}
+.why-comm figcaption b{color:var(--card-ink);font-weight:700}
+
+/* ── 언론보도 ── */
+.press{background:var(--ground)}
+.press .press-h{font-family:var(--display);font-weight:900;font-size:clamp(1.5rem,3.4vw,2.1rem);letter-spacing:-.035em;color:var(--ink);word-break:keep-all}
+.press-grid{display:grid;gap:1.2rem;margin-top:1.6rem}
+@media (min-width:760px){.press-grid{grid-template-columns:repeat(2,1fr);gap:1.4rem}}
+.press-card{display:block;background:var(--card);border-radius:16px;padding:1.5rem 1.6rem;box-shadow:var(--card-shadow);text-decoration:none;border-left:5px solid var(--tan);transition:transform .2s ease}
+.press-card:hover{transform:translateY(-4px)}
+.press-card .pk{font-family:var(--display);font-weight:800;font-size:.78rem;letter-spacing:.1em;color:var(--tan);display:block;margin-bottom:.5rem}
+.press-card strong{font-family:var(--display);font-weight:800;font-size:1.1rem;letter-spacing:-.025em;color:var(--card-ink);line-height:1.5;word-break:keep-all;display:block}
+.press-card .pm{display:block;margin-top:.55rem;font-size:.85rem;color:var(--card-ink-2)}
+
+/* ── 성공사례 플로팅 마퀴 ── */
+.cases-band{background:var(--mist);padding-block:clamp(2.8rem,6.5vw,4.4rem);overflow:hidden}
+.cases-band .cb-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem 1.4rem;margin-bottom:1.8rem}
+.cases-band .cb-head h2{font-family:var(--display);font-weight:900;font-size:clamp(1.5rem,3.4vw,2.1rem);letter-spacing:-.035em;color:var(--ink)}
+.cases-band .cb-head a{font-family:var(--display);font-weight:700;font-size:.95rem;color:var(--tan);text-decoration:none}
+.cases-band .cb-head a:hover{text-decoration:underline}
+.marq-wrap{overflow:hidden}
+.marq{display:flex;gap:1.3rem;width:max-content;animation:marqmove 60s linear infinite}
+.marq:hover{animation-play-state:paused}
+@keyframes marqmove{to{transform:translateX(-50%)}}
+.mcard{width:215px;flex:0 0 auto;background:#FFF;border-radius:14px;box-shadow:0 1px 2px rgba(14,30,50,.08),0 10px 24px -12px rgba(14,30,50,.25);overflow:hidden;text-decoration:none;transition:transform .2s ease}
+.mcard:hover{transform:translateY(-6px)}
+.mcard .mimg{aspect-ratio:3/4;background:#F6F8FA;display:grid;place-items:center;padding:.7rem;position:relative}
+.mcard .mimg img{width:100%;height:100%;object-fit:contain;object-position:top}
+.mcard .mbdg{position:absolute;top:0;right:0;background:var(--band);color:#FFF;font-family:var(--display);font-weight:800;font-size:.72rem;padding:.3rem .65rem;border-bottom-left-radius:.7rem}
+.mcard .mt{display:block;font-family:var(--display);font-weight:700;font-size:.85rem;color:var(--ink);padding:.7rem .85rem .9rem;line-height:1.5;word-break:keep-all}
+@media (prefers-reduced-motion:reduce){.marq{animation:none;overflow-x:auto}}
+
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 <header class="top">
@@ -687,6 +738,7 @@ footer .office b{font-weight:700}
         </button>
         <div class="navsub" id="sub-az">
           <a href="#why">청변의 차별점</a>
+          <a href="#cases">학폭 승소 결정문</a>
           <a href="#flow">사안처리 절차</a>
           <a href="#measures">조치의 종류</a>
           <a href="#counsel">변호사의 조력</a>
@@ -707,6 +759,7 @@ footer .office b{font-weight:700}
 
 <nav class="rail" aria-label="섹션 목차">
   <a href="#why"><span>청변의 차별점</span></a>
+  <a href="#cases"><span>승소 결정문</span></a>
   <a href="#flow"><span>사안처리 절차</span></a>
   <a href="#measures"><span>조치의 종류</span></a>
   <a href="#counsel"><span>변호사의 조력</span></a>
@@ -753,11 +806,182 @@ footer .office b{font-weight:700}
         <p>아이와 직접 마주 앉아 듣고, <b>사전조사의견서를 제출하고, 조사와 학폭위에 동석</b>합니다.
            아이 혼자 조사받는 일은 없습니다.</p>
       </div>
+      <div class="why-card">
+        <span class="wn">05</span>
+        <h3>인천 전 지역 · 초중고 전 학령</h3>
+        <p>학폭 심의위원회는 교육지원청별로 열립니다. 청변은 <b>동부·서부·남부·북부·강화,
+           인천 5개 교육지원청 심의위원회에 모두 출석</b>해 왔고,
+           초등·중등·고등 전 학령의 사건을 수행합니다.</p>
+      </div>
+      <div class="why-card">
+        <span class="wn">06</span>
+        <h3>학폭 – 형사 – 민사 올인원</h3>
+        <p>학교폭력은 학폭위에서 끝나지 않는 경우가 많습니다. 폭행·모욕·명예훼손
+           <b>형사 고소(또는 방어)</b>부터 치료비·위자료 <b>민사 손해배상</b>까지,
+           사건의 처음부터 끝까지 한 사무소에서 책임집니다.</p>
+      </div>
+    </div>
+
+    <div class="why-proof">
+      <figure>
+        <div class="ph"><img src="proof-cert-ice.jpg" alt="인천광역시교육청 학교폭력 제로센터 법률지원단 위촉장" loading="lazy"></div>
+        <figcaption><b>인천광역시교육청</b> 학교폭력 제로센터 법률지원단 위촉장</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img src="proof-lecture.jpg" alt="인천 지역 고등학교 전교생 학교폭력 예방교육 특강" loading="lazy"></div>
+        <figcaption>인천 지역 고교 <b>전교생 학교폭력 예방교육 특강</b> 진행</figcaption>
+      </figure>
+      <figure>
+        <div class="ph"><img src="proof-cert-sh.jpg" alt="시흥시청소년수련관 기관 운영위원회 위촉장" loading="lazy"></div>
+        <figcaption><b>시흥시청소년수련관</b> 기관 운영위원회 위원 위촉장</figcaption>
+      </figure>
+    </div>
+
+    <div class="why-comm">
+      <h3 class="wc-head">서류만 내는 변호사가 아닙니다 — 절차 속에서 실제로 소통합니다</h3>
+      <p class="wc-sub">담당 장학사·학교 학폭 담당 선생님과 주고받은 실제 메일입니다.
+         학교와 학생을 특정할 수 있는 정보는 모두 가렸습니다. 초·중·고 전 학령의 사건입니다.</p>
+      <div class="wc-grid">
+        <figure>
+          <a class="cph" href="comm-elem.jpg" target="_blank" rel="noopener">
+            <img src="comm-elem.jpg" alt="담당 장학사에게 의견서와 증거를 제출한 실제 메일 (초등학교 사건, 개인정보 마스킹)" loading="lazy">
+            <span class="lvl">초등</span>
+          </a>
+          <figcaption>담당 <b>장학사</b>님께 의견서·증거(영상 원본) 직접 제출</figcaption>
+        </figure>
+        <figure>
+          <a class="cph" href="comm-mid.jpg" target="_blank" rel="noopener">
+            <img src="comm-mid.jpg" alt="학교 학폭 담당 선생님과 사전조사 전 서면·증거를 공유한 실제 메일 (중학교 사건, 개인정보 마스킹)" loading="lazy">
+            <span class="lvl">중등</span>
+          </a>
+          <figcaption>학폭 담당 선생님과 <b>사전조사 전</b> 서면·증거 공유</figcaption>
+        </figure>
+        <figure>
+          <a class="cph" href="comm-high.jpg" target="_blank" rel="noopener">
+            <img src="comm-high.jpg" alt="사전조사관 검토용 의견서와 증거를 사전 제출한 실제 메일 (고등학교 사건, 개인정보 마스킹)" loading="lazy">
+            <span class="lvl">고등</span>
+          </a>
+          <figcaption><b>사전조사관</b> 검토용 의견서·증거 사전 제출, 변호사 당일 출석</figcaption>
+        </figure>
+      </div>
     </div>
 
     <div class="why-cta">
       <a class="wbtn" href="tel:010-9911-2793" onclick="cb_naverLead('why_phone_cta')">전화 상담 010-9911-2793</a>
       <a class="wbtn ghostb" href="#flow">학교폭력 절차 한눈에 보기 ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 00-2 성공사례 플로팅 ═══ -->
+<section class="cases-band" id="cases">
+  <div class="w cb-head">
+    <h2>결과로 증명합니다 — 학폭 승소 결정문</h2>
+    <a href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">성공사례 전체 보기 →</a>
+  </div>
+  <div class="marq-wrap">
+    <div class="marq">
+      <a class="mcard" href="https://blog.naver.com/cheong_byeon/224400888844" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/60.jpg" alt="학폭 3호 처분 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">3호 처분</span></span>
+        <span class="mt">초등 피해학생 대리 — 가해학생 3호 처분</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/59.jpg" alt="학폭 8호 강제전학 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">8호 강제전학</span></span>
+        <span class="mt">가해학생 제8호 강제전학 처분 인용</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/61.jpg" alt="학폭 증거보전 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">증거보전</span></span>
+        <span class="mt">학교 CCTV 증거보전으로 영상 확보</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/52.jpg" alt="학폭 처분 도출 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">처분 도출</span></span>
+        <span class="mt">사이버 따돌림·DM 갈취 가해학생 4명 4호 처분</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/53.jpg" alt="학폭 처분 상향 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">처분 상향</span></span>
+        <span class="mt">재심의를 통한 처분 상향 (1호 → 4호)</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/54.jpg" alt="학폭 처분 취소 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">처분 취소</span></span>
+        <span class="mt">가해학생에 대한 경미한 처분 취소</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/56.jpg" alt="학폭 조치 없음 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">조치 없음</span></span>
+        <span class="mt">맞학폭 신고 방어 — 의뢰인 무혐의</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/55.jpg" alt="학폭 조치 없음 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">조치 없음</span></span>
+        <span class="mt">초등 4학년 억울한 누명 '학교폭력 아님'</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/46.jpg" alt="학폭 조치 없음 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">조치 없음</span></span>
+        <span class="mt">학폭위 증거불충분 무죄 결정</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/50.jpg" alt="학폭 기소유예 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">기소유예</span></span>
+        <span class="mt">학폭 관련 형사 고소 불기소</span>
+      </a>
+      <a class="mcard" href="https://blog.naver.com/cheong_byeon/224400888844" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/60.jpg" alt="학폭 3호 처분 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">3호 처분</span></span>
+        <span class="mt">초등 피해학생 대리 — 가해학생 3호 처분</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/59.jpg" alt="학폭 8호 강제전학 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">8호 강제전학</span></span>
+        <span class="mt">가해학생 제8호 강제전학 처분 인용</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/61.jpg" alt="학폭 증거보전 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">증거보전</span></span>
+        <span class="mt">학교 CCTV 증거보전으로 영상 확보</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/52.jpg" alt="학폭 처분 도출 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">처분 도출</span></span>
+        <span class="mt">사이버 따돌림·DM 갈취 가해학생 4명 4호 처분</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/53.jpg" alt="학폭 처분 상향 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">처분 상향</span></span>
+        <span class="mt">재심의를 통한 처분 상향 (1호 → 4호)</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/54.jpg" alt="학폭 처분 취소 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">처분 취소</span></span>
+        <span class="mt">가해학생에 대한 경미한 처분 취소</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/56.jpg" alt="학폭 조치 없음 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">조치 없음</span></span>
+        <span class="mt">맞학폭 신고 방어 — 의뢰인 무혐의</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/55.jpg" alt="학폭 조치 없음 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">조치 없음</span></span>
+        <span class="mt">초등 4학년 억울한 누명 '학교폭력 아님'</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/46.jpg" alt="학폭 조치 없음 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">조치 없음</span></span>
+        <span class="mt">학폭위 증거불충분 무죄 결정</span>
+      </a>
+      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
+        <span class="mimg"><img src="https://cheongbyeon.co.kr/50.jpg" alt="학폭 기소유예 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">기소유예</span></span>
+        <span class="mt">학폭 관련 형사 고소 불기소</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 00-3 언론보도 ═══
+     언론보도 링크 2건을 받으면: 아래 section의 hidden 속성을 지우고,
+     각 press-card의 href / 기사 제목 / 매체명·날짜를 채워 넣으세요. -->
+<section class="s press" id="press" hidden>
+  <div class="w">
+    <h2 class="press-h">언론이 주목한 청변의 학교폭력 대응</h2>
+    <div class="press-grid">
+      <a class="press-card" href="#" target="_blank" rel="noopener">
+        <span class="pk">PRESS</span>
+        <strong>기사 제목 1</strong>
+        <span class="pm">매체명 · 날짜</span>
+      </a>
+      <a class="press-card" href="#" target="_blank" rel="noopener">
+        <span class="pk">PRESS</span>
+        <strong>기사 제목 2</strong>
+        <span class="pm">매체명 · 날짜</span>
+      </a>
     </div>
   </div>
 </section>
