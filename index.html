@@ -652,6 +652,25 @@ footer .src{font-size:.84rem;line-height:1.8;color:rgba(255,255,255,.5)}
 footer .office{color:var(--band-ink);font-weight:500;line-height:1.9}
 footer .office b{font-weight:700}
 
+/* ════════  00 차별점 홈  ════════ */
+.why{background:var(--ground)}
+.why .why-kicker{font-family:var(--display);font-weight:800;font-size:.95rem;letter-spacing:.14em;color:var(--tan);display:block;margin-bottom:1.2rem}
+.why .why-title{font-family:var(--display);font-weight:900;font-size:clamp(2.3rem,6.3vw,4.4rem);letter-spacing:-.045em;line-height:1.14;color:var(--ink);word-break:keep-all}
+.why .why-title i{font-style:normal;color:var(--tan)}
+.why .why-lede{color:var(--ink-2);font-size:1.05rem;line-height:1.85;max-width:37rem;margin-top:1.4rem;word-break:keep-all}
+.why-grid{display:grid;gap:1.4rem;margin-top:clamp(2.2rem,5vw,3.2rem)}
+@media (min-width:860px){.why-grid{grid-template-columns:repeat(2,1fr);gap:1.8rem}}
+.why-card{background:var(--card);border-radius:20px;padding:1.9rem 1.8rem 2rem;box-shadow:var(--card-shadow);border-top:5px solid var(--tan)}
+.why-card .wn{font-family:var(--display);font-weight:900;font-size:1rem;color:var(--tan);letter-spacing:.05em;display:block;margin-bottom:.7rem}
+.why-card h3{font-family:var(--display);font-weight:800;font-size:1.32rem;letter-spacing:-.032em;color:var(--card-ink);margin-bottom:.6rem;word-break:keep-all}
+.why-card p{color:var(--card-ink-2);font-size:.97rem;line-height:1.78;word-break:keep-all}
+.why-card p b{color:var(--card-ink);font-weight:700}
+.why-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:clamp(2rem,4.5vw,2.9rem)}
+.why-cta .wbtn{display:inline-flex;align-items:center;gap:.6rem;background:var(--band);color:#FFF;font-family:var(--display);font-weight:800;font-size:1.04rem;letter-spacing:-.02em;text-decoration:none;padding:1rem 1.9rem;border-radius:999px;transition:background .18s ease}
+.why-cta .wbtn:hover{background:var(--tan)}
+.why-cta .wbtn.ghostb{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--rule-2)}
+.why-cta .wbtn.ghostb:hover{background:var(--mist);color:var(--ink)}
+
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 <header class="top">
@@ -667,6 +686,7 @@ footer .office b{font-weight:700}
           학교폭력 A to Z <i aria-hidden="true">▼</i>
         </button>
         <div class="navsub" id="sub-az">
+          <a href="#why">청변의 차별점</a>
           <a href="#flow">사안처리 절차</a>
           <a href="#measures">조치의 종류</a>
           <a href="#counsel">변호사의 조력</a>
@@ -686,6 +706,7 @@ footer .office b{font-weight:700}
 </header>
 
 <nav class="rail" aria-label="섹션 목차">
+  <a href="#why"><span>청변의 차별점</span></a>
   <a href="#flow"><span>사안처리 절차</span></a>
   <a href="#measures"><span>조치의 종류</span></a>
   <a href="#counsel"><span>변호사의 조력</span></a>
@@ -697,6 +718,49 @@ footer .office b{font-weight:700}
 </nav>
 
 <main>
+
+<!-- ═══ 00 청변의 차별점 ═══ -->
+<section class="s why" id="why">
+  <div class="w">
+    <span class="why-kicker">CHEONGBYEON SCHOOL VIOLENCE CENTER</span>
+    <h2 class="why-title">학교폭력 사건,<br>인천 학부모님들이<br><i>청변을 찾는 이유</i></h2>
+    <p class="why-lede">학교폭력은 아이의 학교생활과 생활기록부, 그리고 마음에 오래 남는 사건입니다.
+       청변은 절차를 아는 것에서 멈추지 않고, <strong>그 절차가 실제로 어떻게 움직이는지</strong>를 알고 움직입니다.</p>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <span class="wn">01</span>
+        <h3>인천교육청 학폭 법률지원단</h3>
+        <p>김성찬 대표변호사는 <b>인천광역시교육청 학교폭력 제로센터 법률지원단 위촉위원</b>입니다.
+           인천 지역 학폭위의 심의 기준과 절차를 가장 가까이에서 이해하는 변호사입니다.</p>
+      </div>
+      <div class="why-card">
+        <span class="wn">02</span>
+        <h3>결과로 증명한 사건들</h3>
+        <p>피해학생을 대리해 <b>가해학생 제8호(강제전학) 처분을 인용</b>시킨 사안부터,
+           억울하게 신고당한 학생의 <b>'학교폭력 아님' 결정</b>, 솜방망이 처분을
+           행정소송으로 뒤집은 사례까지 — 실제 결정문으로 확인하실 수 있습니다.</p>
+      </div>
+      <div class="why-card">
+        <span class="wn">03</span>
+        <h3>피해 · 가해 양측의 경험</h3>
+        <p>어느 쪽에 서느냐에 따라 전략이 완전히 달라집니다.
+           청변은 <b>양측 사건을 모두 다수 수행</b>해 상대측이 무엇을 준비해 올지 알고 대응합니다.</p>
+      </div>
+      <div class="why-card">
+        <span class="wn">04</span>
+        <h3>아이 곁에 서는 변호사</h3>
+        <p>아이와 직접 마주 앉아 듣고, <b>사전조사의견서를 제출하고, 조사와 학폭위에 동석</b>합니다.
+           아이 혼자 조사받는 일은 없습니다.</p>
+      </div>
+    </div>
+
+    <div class="why-cta">
+      <a class="wbtn" href="tel:010-9911-2793" onclick="cb_naverLead('why_phone_cta')">전화 상담 010-9911-2793</a>
+      <a class="wbtn ghostb" href="#flow">학교폭력 절차 한눈에 보기 ↓</a>
+    </div>
+  </div>
+</section>
 
 <!-- ═══ HERO ═══ -->
 <div class="w hero">
