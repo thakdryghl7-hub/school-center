@@ -697,6 +697,11 @@ footer .office b{font-weight:700}
 
 
 /* ════════ 왜 청변인가 · 빅섹션 ════════ */
+.gnum2{position:absolute;top:1.1rem;left:1.3rem;font-family:var(--display);font-weight:900;font-size:clamp(3.2rem,6vw,5.5rem);line-height:.85;letter-spacing:-.05em;color:#C7D2DE;user-select:none;pointer-events:none;z-index:1}
+.cases-band{position:relative}
+@media(max-width:760px){.gnum2{font-size:2.4rem;top:.7rem;left:.9rem}}
+.sec-dark .gnum2{color:rgba(255,255,255,.18)}
+.sec-light .gnum2{color:#D7DEE7}
 .secnum{font-family:var(--display);font-weight:900;font-size:1rem;letter-spacing:.22em;color:var(--tan);display:block;margin-bottom:1rem}
 .bigh{font-family:var(--display);font-weight:900;font-size:clamp(2.1rem,5.2vw,3.7rem);letter-spacing:-.045em;line-height:1.2;color:var(--ink);word-break:keep-all}
 .bigh i{font-style:normal;color:var(--tan)}
@@ -708,6 +713,16 @@ footer .office b{font-weight:700}
 @media (min-width:1024px){.setgrid{grid-template-columns:repeat(5,1fr);gap:1rem}}
 .mcard.wide{width:430px}
 .setgrid .mcard.wide{width:auto}
+.setgrid{padding-right:14px}
+.setgrid .stack{position:relative;isolation:isolate}
+.setgrid .stack::before,.setgrid .stack::after{content:"";position:absolute;inset:0;background:#FFF;border:1px solid #D7DFE8;z-index:-1;border-radius:14px}
+.setgrid .stack::before{transform:translate(7px,7px)}
+.setgrid .stack::after{transform:translate(14px,14px);opacity:.6}
+.setgrid .mcard{cursor:zoom-in}
+.mcard .zoombox{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%) scale(.92);width:88%;opacity:0;transition:opacity .28s ease,transform .28s ease;z-index:5;box-shadow:0 18px 40px rgba(10,25,45,.35);border:2px solid #CD1C1C;border-radius:8px;background:#FFF;pointer-events:none;overflow:hidden}
+.mcard .zoombox img{width:100%;display:block}
+@media (hover:hover){.setgrid .mcard:hover .zoombox{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+.cases-band .cb-note{color:var(--ink-3);opacity:.65;font-size:.84rem;margin-top:1.6rem}
 .mcard.wide .mimg{aspect-ratio:1538/1076;padding:.8rem}
 .mcard.d-nambu .mimg{background:#EFE9DC}.mcard.d-nambu .mbdg{background:#8A6D3B}
 .mcard.d-bukbu .mimg{background:#E3EDF7}.mcard.d-bukbu .mbdg{background:#2E5E8F}
@@ -761,7 +776,7 @@ footer .office b{font-weight:700}
         <div class="navsub" id="sub-why">
           <a href="#cases">01 결과로 증명합니다</a>
           <a href="#process">02 학폭위 모든 절차</a>
-          <a href="#allincheon">03 인천 전 지역 · 전 학령</a>
+          <a href="#allincheon">03 인천 전 지역 · 전 학년</a>
           <a href="#allinone">04 학폭 · 형사 · 민사 올인원</a>
           <a href="#official">05 인천교육청 법률지원단</a>
         </div>
@@ -818,10 +833,10 @@ footer .office b{font-weight:700}
 
 <!-- ═══ 01 결과로 증명 ═══ -->
 <section class="cases-band" id="cases">
+  <span class="gnum2" aria-hidden="true">01</span>
   <div class="w cb-head">
     <div>
-      <span class="secnum">01 — RESULTS</span>
-      <h2 class="bigh">결과로 <i>증명</i>합니다</h2>
+            <h2 class="bigh">결과로 <i>증명</i>합니다</h2>
     </div>
     <a href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">성공사례 전체 보기 →</a>
   </div>
@@ -913,14 +928,14 @@ footer .office b{font-weight:700}
 
 <!-- ═══ 02 학폭위 전 절차 ═══ -->
 <section class="bigsec sec-dark" id="process">
+  <span class="gnum2" aria-hidden="true">02</span>
   <div class="bgmarq" aria-hidden="true">
     <img src="comm-elem.jpg" alt=""><img src="comm-mid.jpg" alt=""><img src="comm-high.jpg" alt="">
     <img src="comm-elem.jpg" alt=""><img src="comm-mid.jpg" alt=""><img src="comm-high.jpg" alt="">
   </div>
   <div class="veil"></div>
   <div class="fg"><div class="w">
-    <span class="secnum">02 — FULL PROCESS</span>
-    <h2 class="bigh">학폭위 모든 절차,<br><i>처음부터 끝까지</i> 함께합니다</h2>
+        <h2 class="bigh">학폭위 모든 절차,<br><i>처음부터 끝까지</i> 함께합니다</h2>
     <p class="lede">갑작스러운 학교폭력 통보 앞에서, 학부모님이 <b>절차를 몰라서 놓치는 일</b>이 없어야 합니다.<br>
        사안 접수와 <b>사전조사의견서 제출, 조사 동석, 심의위원회 출석</b>까지 변호사가 전 과정에 직접 참여합니다.</p>
   </div></div>
@@ -928,66 +943,66 @@ footer .office b{font-weight:700}
 
 <!-- ═══ 03 인천 전 지역 ═══ -->
 <section class="cases-band" id="allincheon">
+  <span class="gnum2" aria-hidden="true">03</span>
   <div class="w cb-head">
     <div>
-      <span class="secnum">03 — ALL INCHEON</span>
-      <h2 class="bigh">인천 <i>전 지역</i><br>초등학생부터 고등학생까지</h2>
+            <h2 class="bigh">인천 <i>전 지역</i><br>초등학생부터 고등학생까지</h2>
       <p class="cb-sub"><b>인천 전 지역의 학부모님들이 청변을 찾아주고 계십니다.</b><br>
-         같은 처분이라도 초등 · 중등 · 고등에 따라 생활기록부 기재와 입시에 미치는 결과, 그 의미가 전혀 다르기 때문에
-         청변은 <b>학령별 맞춤 전략</b>을 설계합니다.</p>
+         그래서 청변은 동부 · 서부 · 남부 · 북부 · 강화, <b>인천의 모든 학교폭력대책심의위원회에 출석</b>해 왔고,
+         <b>각 위원회의 장학사 · 조사관과 직접 소통</b>해 왔습니다.<br>
+         또한 같은 처분이라도 초등 · 중등 · 고등에 따라 생활기록부 기재와 입시에 미치는 결과, 그 의미가 전혀 다르기 때문에
+         청변은 <b>학년별 맞춤 전략</b>을 설계합니다.</p>
     </div>
   </div>
   <div class="w setgrid">
-      <div class="mcard wide d-nambu">
-        <span class="mimg"><img src="sub-nambu.jpg" alt="인천 남부교육지원청 심의위원회 제출 의견서" loading="lazy"><span class="mbdg">남부</span></span>
-        <span class="mt">인천 남부교육지원청 심의위 의견서</span>
-      </div>
-      <div class="mcard wide d-bukbu">
-        <span class="mimg"><img src="sub-bukbu.jpg" alt="인천 북부교육지원청 심의위원회 제출 의견서" loading="lazy"><span class="mbdg">북부</span></span>
-        <span class="mt">인천 북부교육지원청 심의위 의견서</span>
-      </div>
-      <div class="mcard wide d-dongbu">
-        <span class="mimg"><img src="sub-dongbu.jpg" alt="인천 동부교육지원청 심의위원회 제출 의견서" loading="lazy"><span class="mbdg">동부</span></span>
-        <span class="mt">인천 동부교육지원청 심의위 의견서</span>
-      </div>
-      <div class="mcard wide d-seobu">
-        <span class="mimg"><img src="sub-seobu.jpg" alt="인천 서부교육지원청 심의위원회 제출 의견서" loading="lazy"><span class="mbdg">서부</span></span>
-        <span class="mt">인천 서부교육지원청 심의위 의견서</span>
-      </div>
-      <div class="mcard wide d-ganghwa">
-        <span class="mimg"><img src="sub-ganghwa.jpg" alt="인천 강화교육지원청 심의위원회 제출 의견서" loading="lazy"><span class="mbdg">강화</span></span>
-        <span class="mt">인천 강화교육지원청 심의위 의견서</span>
-      </div>
+      <div class="stack"><div class="mcard wide d-dongbu">
+        <span class="mimg"><img src="sub-dongbu.jpg" alt="인천 동부교육지원청 심의위원회 제출 의견서" loading="lazy"><span class="mbdg">인천동부교육지원청</span><span class="zoombox" aria-hidden="true"><img src="zoom-dongbu.jpg" alt=""></span></span>
+      </div></div>
+      <div class="stack"><div class="mcard wide d-seobu">
+        <span class="mimg"><img src="sub-seobu.jpg" alt="인천 서부교육지원청 심의위원회 제출 의견서" loading="lazy"><span class="mbdg">인천서부교육지원청</span><span class="zoombox" aria-hidden="true"><img src="zoom-seobu.jpg" alt=""></span></span>
+      </div></div>
+      <div class="stack"><div class="mcard wide d-nambu">
+        <span class="mimg"><img src="sub-nambu.jpg" alt="인천 남부교육지원청 심의위원회 제출 의견서" loading="lazy"><span class="mbdg">인천남부교육지원청</span><span class="zoombox" aria-hidden="true"><img src="zoom-nambu.jpg" alt=""></span></span>
+      </div></div>
+      <div class="stack"><div class="mcard wide d-bukbu">
+        <span class="mimg"><img src="sub-bukbu.jpg" alt="인천 북부교육지원청 심의위원회 제출 의견서" loading="lazy"><span class="mbdg">인천북부교육지원청</span><span class="zoombox" aria-hidden="true"><img src="zoom-bukbu.jpg" alt=""></span></span>
+      </div></div>
+      <div class="stack"><div class="mcard wide d-ganghwa">
+        <span class="mimg"><img src="sub-ganghwa.jpg" alt="인천 강화교육지원청 심의위원회 제출 의견서" loading="lazy"><span class="mbdg">인천강화교육지원청</span><span class="zoombox" aria-hidden="true"><img src="zoom-ganghwa.jpg" alt=""></span></span>
+      </div></div>
   </div>
+  <div class="w"><p class="cb-note">위 서면은 각 위원회에 제출한 의견서 중 한 부씩만을 발췌한 것입니다.</p></div>
 </section>
 
 <!-- ═══ 04 올인원 ═══ -->
 <section class="bigsec sec-dark alt" id="allinone">
+  <span class="gnum2" aria-hidden="true">04</span>
   <div class="bgmarq" aria-hidden="true">
     <img src="doc-criminal.jpg" alt=""><img src="doc-cause.jpg" alt=""><img src="doc-civil.jpg" alt=""><img src="https://cheongbyeon.co.kr/50.jpg" alt="" onerror="this.remove()">
     <img src="doc-criminal.jpg" alt=""><img src="doc-cause.jpg" alt=""><img src="doc-civil.jpg" alt=""><img src="https://cheongbyeon.co.kr/50.jpg" alt="" onerror="this.remove()">
   </div>
   <div class="veil"></div>
   <div class="fg"><div class="w"><div class="fgin">
-    <span class="secnum">04 — ALL IN ONE</span>
-    <h2 class="bigh">학폭 – 형사 – 민사,<br><i>올인원</i></h2>
+        <h2 class="bigh">학폭 – 형사 – 민사,<br><i>올인원</i></h2>
     <p class="lede">학교폭력은 학폭위에서 끝나지 않는 경우가 많습니다.<br>
-       폭행 · 모욕 · 명예훼손 <b>형사 고소(또는 방어)</b>부터 치료비 · 위자료 <b>민사 손해배상</b>까지, 사건의 처음부터 끝까지 한 사무소에서 책임집니다.</p>
+       폭행 · 모욕 · 명예훼손 <b>형사 고소(또는 방어)</b>부터 치료비 · 위자료 <b>민사 손해배상</b>까지,<br>
+       <b>우리 아이를 위한 모든 절차</b>를 처음부터 끝까지 청변이 책임집니다.</p>
   </div></div></div>
 </section>
 
 <!-- ═══ 05 법률지원단 ═══ -->
 <section class="bigsec sec-light" id="official">
+  <span class="gnum2" aria-hidden="true">05</span>
   <div class="bgmarq" aria-hidden="true">
     <img src="proof-cert-ice.jpg" alt=""><img src="proof-lecture.jpg" alt=""><img src="proof-cert-sh.jpg" alt="">
     <img src="proof-cert-ice.jpg" alt=""><img src="proof-lecture.jpg" alt=""><img src="proof-cert-sh.jpg" alt="">
   </div>
   <div class="veil"></div>
   <div class="fg"><div class="w">
-    <span class="secnum">05 — OFFICIAL</span>
-    <h2 class="bigh">인천교육청이 위촉한<br><i>학폭 법률지원단</i></h2>
-    <p class="lede">김성찬 대표변호사는 <b>인천광역시교육청 학교폭력 제로센터 법률지원단 위촉위원</b>입니다.<br>
-       인천 지역 학폭위의 심의 기준과 절차를 가장 가까이에서 이해하는 변호사입니다.</p>
+        <h2 class="bigh">인천교육청이 위촉한<br><i>학폭 법률지원단</i></h2>
+    <p class="lede">김성찬 대표변호사는 <b>인천광역시교육청 학교폭력 제로센터 법률지원단 위촉위원</b>으로,<br>
+       인천 지역 학교를 직접 찾아 <b>학교폭력 예방 강의</b>를 진행하고 있습니다.<br>
+       인천 학폭위의 심의 기준과 절차를 가장 가까이에서 이해하는 이유입니다.</p>
   </div></div>
 </section>
 
