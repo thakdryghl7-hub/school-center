@@ -677,6 +677,14 @@ footer .office b{font-weight:700}
 .press-card strong{font-family:var(--display);font-weight:800;font-size:1.1rem;letter-spacing:-.025em;color:var(--card-ink);line-height:1.5;word-break:keep-all;display:block}
 .press-card .pm{display:block;margin-top:.55rem;font-size:.85rem;color:var(--card-ink-2)}
 
+/* ── 성공사례 캐러셀 ── */
+.cb-tools{display:flex;align-items:center;gap:.7rem}
+.cbtn{width:3rem;height:3rem;border-radius:50%;border:1px solid var(--rule-2);background:transparent;color:var(--ink-2);font-size:1.05rem;cursor:pointer;transition:background .2s,color .2s;flex:0 0 auto}
+.cbtn:hover{background:var(--band);color:#FFF;border-color:var(--band)}
+.caro-wrap{overflow:hidden}
+.caro{display:flex;gap:1.3rem;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x mandatory;padding:0 4vw .6rem;scrollbar-width:none}
+.caro::-webkit-scrollbar{display:none}
+.caro .mcard{scroll-snap-align:start}
 /* ── 성공사례 플로팅 마퀴 ── */
 .cases-band{background:var(--mist);padding-block:clamp(2.8rem,6.5vw,4.4rem);overflow:hidden}
 .cases-band .cb-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem 1.4rem;margin-bottom:1.8rem}
@@ -901,52 +909,16 @@ footer .office b{font-weight:700}
   <span class="gnum2" aria-hidden="true">04</span>
   <div class="w cb-head">
     <div>
-            <h2 class="bigh">결과로 <i>증명</i>합니다</h2>
+      <h2 class="bigh">결과로 <i>증명</i>합니다</h2>
     </div>
-    <a href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">성공사례 전체 보기 →</a>
+    <div class="cb-tools">
+      <a href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">성공사례 전체 보기 →</a>
+      <button class="cbtn" id="cases-prev" type="button" aria-label="이전 사례">←</button>
+      <button class="cbtn" id="cases-next" type="button" aria-label="다음 사례">→</button>
+    </div>
   </div>
-  <div class="marq-wrap">
-    <div class="marq">
-      <a class="mcard" href="https://blog.naver.com/cheong_byeon/224400888844" target="_blank" rel="noopener">
-        <span class="mimg"><img src="https://cheongbyeon.co.kr/60.jpg" alt="학폭 3호 처분 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">3호 처분</span></span>
-        <span class="mt">초등 피해학생 대리 — 가해학생 3호 처분</span>
-      </a>
-      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
-        <span class="mimg"><img src="https://cheongbyeon.co.kr/59.jpg" alt="학폭 8호 강제전학 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">8호 강제전학</span></span>
-        <span class="mt">가해학생 제8호 강제전학 처분 인용</span>
-      </a>
-      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
-        <span class="mimg"><img src="https://cheongbyeon.co.kr/61.jpg" alt="학폭 증거보전 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">증거보전</span></span>
-        <span class="mt">학교 CCTV 증거보전으로 영상 확보</span>
-      </a>
-      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
-        <span class="mimg"><img src="https://cheongbyeon.co.kr/52.jpg" alt="학폭 처분 도출 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">처분 도출</span></span>
-        <span class="mt">사이버 따돌림·DM 갈취 가해학생 4명 4호 처분</span>
-      </a>
-      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
-        <span class="mimg"><img src="https://cheongbyeon.co.kr/53.jpg" alt="학폭 처분 상향 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">처분 상향</span></span>
-        <span class="mt">재심의를 통한 처분 상향 (1호 → 4호)</span>
-      </a>
-      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
-        <span class="mimg"><img src="https://cheongbyeon.co.kr/54.jpg" alt="학폭 처분 취소 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">처분 취소</span></span>
-        <span class="mt">가해학생에 대한 경미한 처분 취소</span>
-      </a>
-      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
-        <span class="mimg"><img src="https://cheongbyeon.co.kr/56.jpg" alt="학폭 조치 없음 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">조치 없음</span></span>
-        <span class="mt">맞학폭 신고 방어 — 의뢰인 무혐의</span>
-      </a>
-      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
-        <span class="mimg"><img src="https://cheongbyeon.co.kr/55.jpg" alt="학폭 조치 없음 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">조치 없음</span></span>
-        <span class="mt">초등 4학년 억울한 누명 '학교폭력 아님'</span>
-      </a>
-      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
-        <span class="mimg"><img src="https://cheongbyeon.co.kr/46.jpg" alt="학폭 조치 없음 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">조치 없음</span></span>
-        <span class="mt">학폭위 증거불충분 무죄 결정</span>
-      </a>
-      <a class="mcard" href="https://cheongbyeon.co.kr/success-school.html" target="_blank" rel="noopener">
-        <span class="mimg"><img src="https://cheongbyeon.co.kr/50.jpg" alt="학폭 기소유예 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">기소유예</span></span>
-        <span class="mt">학폭 관련 형사 고소 불기소</span>
-      </a>
+  <div class="caro-wrap">
+    <div class="caro" id="cases-caro">
       <a class="mcard" href="https://blog.naver.com/cheong_byeon/224400888844" target="_blank" rel="noopener">
         <span class="mimg"><img src="https://cheongbyeon.co.kr/60.jpg" alt="학폭 3호 처분 결정문" loading="lazy" onerror="this.closest('a').style.display='none'"><span class="mbdg">3호 처분</span></span>
         <span class="mt">초등 피해학생 대리 — 가해학생 3호 처분</span>
@@ -1110,5 +1082,15 @@ footer .office b{font-weight:700}
 </script>
 
 
+<script>
+(function(){
+  var c=document.getElementById('cases-caro');
+  if(!c)return;
+  var step=function(){return Math.max(c.clientWidth*0.7, 460);};
+  var pv=document.getElementById('cases-prev'), nx=document.getElementById('cases-next');
+  if(pv)pv.addEventListener('click',function(){c.scrollBy({left:-step(),behavior:'smooth'});});
+  if(nx)nx.addEventListener('click',function(){c.scrollBy({left:step(),behavior:'smooth'});});
+})();
+</script>
 </body>
 </html>
